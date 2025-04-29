@@ -23,7 +23,7 @@ RUN npm ci -f --only=production && npm cache clean --force
 
 RUN npx prisma generate
 
-# CREATE FINALE IMAGE
+# CREATE FINALE IMAGE TO PROD
 FROM node:21-alpine3.19 AS prod
 WORKDIR /usr/src/app
 
